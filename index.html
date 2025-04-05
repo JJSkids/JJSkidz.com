@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JJSkids.com</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Base Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    header {
+      background: #d2691e;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    main {
+      padding: 20px;
+    }
+    
+    .title {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    
+    .description {
+      text-align: left;
+      margin-bottom: 20px;
+      font-size: 1rem;
+    }
+    
+    /* Grid Styles */
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+    
+    .grid-item {
+      background: #fff;
+      padding: 20px;
+      border: 2px solid #d2691e;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #333;
+      transition: transform 0.3s, background 0.3s;
+      width: 200px;
+      text-align: center;
+    }
+    
+    .grid-item:hover {
+      background: #f0e68c;
+      transform: scale(1.05);
+    }
+    
+    /* Social Media Links */
+    .Extras {
+      margin-top: 20px;
+      text-align: left;
+    }
+    
+    .social-links {
+      text-align: left;
+      margin-bottom: 30px;
+    }
+    
+    .social-btn {
+      display: inline-block;
+      background: #d2691e;
+      color: #fff;
+      padding: 10px 15px;
+      text-decoration: none;
+      margin-right: 10px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    
+    .social-btn:hover {
+      background: #a0522d;
+    }
+    
+    /* Chatbot Styles */
+    .chatbot {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 300px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      display: none;
+      flex-direction: column;
+    }
+    
+    .chatbot-header {
+      background: #d2691e;
+      color: #fff;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+    
+    .close-btn {
+      background: transparent;
+      border: none;
+      font-size: 1.2rem;
+      color: #fff;
+      cursor: pointer;
+    }
+    
+    .chatbot-messages {
+      padding: 10px;
+      height: 200px;
+      overflow-y: auto;
+    }
+    
+    .chatbot-input {
+      display: flex;
+      border-top: 1px solid #ccc;
+    }
+    
+    .chatbot-input input {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      outline: none;
+    }
+    
+    .chatbot-input button {
+      background: #d2691e;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+    
+    /* Request Class Button */
+    #Online-Physical-Class {
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    #Online-Physical-Class a {
+      background: #d2691e;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    
+    #Online-Physical-Class a:hover {
+      background: #a0522d;
+    }
+  </style>
+  <script>
+    // Toggle Chatbot visibility
+    function toggleChat() {
+      const chatbox = document.getElementById("chatbot");
+      chatbox.style.display = (chatbox.style.display === "flex") ? "none" : "flex";
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>JJSkids.com</h1>
+  </header>
+  <main>
+    <h2 class="title">Welcome to JJSkids.com!</h2>
+    <p class="description">
+      <code>This is a site you can use to understand <strong>Mathematics, French, Music, Art, Spanish, HairCare, Construction, IT, Coding, Food, Medicin, and Biblical Studies</strong>.<br><br>
+      You can ask any question from our community of specialists.</code>
+    </p>
+    
+    <section class="grid">
+      <a href="pages/mathematics.html" class="grid-item" id="Maths">Mathematics</a>
+      <a href="pages/french.html" class="grid-item" id="French">French</a>
+      <a href="pages/music.html" class="grid-item">Music</a>
+      <a href="pages/art.html" class="grid-item">Art</a>
+      <a href="pages/spanish.html" class="grid-item">Spanish</a>
+      <a href="pages/it.html" class="grid-item">IT</a>
+      <a href="pages/coding.html" class="grid-item">Coding</a>
+      <a href="pages/C.R.S.html" class="grid-item">Biblical Studies</a>
+      <a href="pages/Hair-Care.html" class="grid-item">Hair-Care</a>
+      <a href="pages/Construction.html" class="grid-item">Construction</a>
+      <a href="pages/Food.html" class="grid-item">Food</a>
+      <a href="pages/medicin.html" class="grid-item">Medicin</a>
+    </section>
+    
+    <hr>
+    <h3 class="Extras">Social Media Handles</h3>
+    <div class="social-links">
+      <a href="https://replit.com/@hellojjskids" class="social-btn">Replit</a>
+      <a href="submit_form.html" class="social-btn">Share</a>
+    </div>
+    
+    <button id="toggle-chatbot" onclick="toggleChat()">Chat with AI</button>
+    <div class="chatbot" id="chatbot">
+      <div class="chatbot-header">
+        <span>AI Assistant</span>
+        <button class="close-btn" onclick="toggleChat()" id="x">×</button>
+      </div>
+      <div class="chatbot-messages" id="Chatbot"></div>
+      <div class="chatbot-input" id="chatbot-input">
+        <input type="text" placeholder="Type your message..." id="chat-input">
+        <button id="send-btn">Send</button>
+      </div>
+    </div>
+    
+    <div id="Online-Physical-Class">
+      <a href="Physical-Class.html">Request Physical Class Now</a>
+    </div>
+  </main>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

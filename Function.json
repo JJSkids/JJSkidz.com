@@ -1,0 +1,29 @@
+{
+  "name": "user_data",
+  "inputs": [
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "email",
+      "type": "string"
+    },
+    {
+      "name": "phone",
+      "type": "string"
+    }
+  ],
+  "output": {
+    "type": "object",
+    "properties": {
+      "success": {
+        "type": "boolean"
+      },
+      "message": {
+        "type": "string"
+      }
+    }
+  },
+  "handler": "submit_form-Physical-Class.html"
+}
